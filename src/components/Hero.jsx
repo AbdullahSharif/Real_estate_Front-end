@@ -9,7 +9,7 @@ function Hero() {
   const [city, setCity] = useState("all");
 
   return (
-    <div className={`bg-[url('src/assets/bg.webp')] h-screen mx-6 my-10 rounded-xl bg-blend-darken bg-black/[0.5] bg-no-repeat bg-cover flex flex-col items-center justify-center space-y-12`}>
+    <div className={`bg-[url('src/assets/bg.webp')] h-screen mx-6 my-10 rounded-xl bg-blend-overlay bg-black/[0.5] bg-no-repeat bg-cover flex flex-col items-center justify-center space-y-12`}>
       <h1 className=" text-3xl md:text-6xl text-slate-800 bg-white p-8 shadow-2xl rounded-lg">Let&apos;s find the best for you </h1>
       <div className="space-x-6 flex flex-col space-y-9 md:flex-row md:space-y-0 items-center">
 
