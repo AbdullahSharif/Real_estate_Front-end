@@ -9,12 +9,12 @@ function Navbar() {
 
   return (
     <div>
-      <div className="hidden md:flex flex-row items-center justify-between p-6 m-6 bg-gradient-to-b shadow-xl from-slate-400 to-slate-500 rounded-lg">
+      <div className="hidden md:flex flex-row items-center justify-between p-6 m-6 bg-gradient-to-b shadow-xl from-slate-700 to-slate-900 rounded-lg">
 
 
         <Link to="/" className="flex flex-row items-center space-x-4 text-2xl font-bold text-white"> <BsHousesFill size={25} color="white"/> <span>Property Hunter</span> </Link>
 
-        <ul className="flex flex-row justify-between space-x-20 font-bold text-lg">
+        <ul className="flex flex-row justify-between space-x-20 font-bold text-lg text-white">
           <li><Link to="/" className="hover:bg-orange-400 p-2 rounded-lg transition ease-linear">Home</Link></li>
           <li><Link to="/about" className="hover:bg-orange-400 p-2 rounded-lg transition ease-linear">About</Link></li>
           <li><Link to={"/properties"} className="hover:bg-orange-400 p-2 rounded-lg transition ease-linear">Properties</Link></li>
@@ -28,11 +28,11 @@ function Navbar() {
 
       </div>
 
-      <div className="md:hidden flex relative items-center justify-between p-6 m-6 bg-gradient-to-b shadow-xl from-slate-400 to-slate-500 rounded-lg">
+      <div className="md:hidden flex relative items-center justify-between p-6 m-6 bg-gradient-to-b shadow-xl from-slate-700 to-slate-900 rounded-lg">
         <button onClick={() => setClicked(!clicked)}><BiMenu size={25} color="white"/></button>
 
-        <div className={`absolute w-max from-slate-400 to-slate-500 rounded-lg flex-col p-6 bg-gradient-to-t shadow-xl top-24 left-0 ${clicked ? "flex" : "hidden" }`}>
-          <ul className="flex flex-col justify-between items-center space-y-8 font-bold text-lg">
+        <div className={`absolute w-max from-slate-700 to-slate-900 rounded-lg flex-col p-6 bg-gradient-to-b shadow-xl top-24 left-0 ${clicked ? "flex" : "hidden" }`}>
+          <ul className="flex flex-col justify-between items-center space-y-8 font-bold text-lg text-white ">
             <li><Link to="/" className="hover:bg-orange-400 p-2 rounded-lg transition ease-linear">Home</Link></li>
             <li><Link to="/about" className="hover:bg-orange-400 p-2 rounded-lg transition ease-linear">About</Link></li>
             <li><Link to={"/properties"} className="hover:bg-orange-400 p-2 rounded-lg transition ease-linear">Properties</Link></li>
