@@ -20,7 +20,7 @@ function PropertyTypes() {
 
         }
         fetchNumProperties();
-    }, [numProperties])
+    }, [])
 
   return (
     <div className="flex flex-col space-y-16 text-3xl font-semibold">
